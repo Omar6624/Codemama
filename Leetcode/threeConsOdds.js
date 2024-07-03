@@ -7,7 +7,12 @@ var threeConsecutiveOdds = function (arr) {
       counter = 0;
     } else counter += 1;
 
-    if (counter === 3) return true;
+    if (counter === 3) {
+      console.log(i, j);
+      return true;
+    }
   }
   return false;
 };
+
+console.log(threeConsecutiveOdds([1, 3, 2]));
